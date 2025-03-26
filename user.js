@@ -20,7 +20,7 @@ const createCards = (users) => {
     users.forEach(user => {
         cardsHtml += `
         <div class="col-md-3">
-         <div class="card mb-3">
+         <div class="card mb-4">
           <div class="card-body">
             <h5 class="card-title">${user.name}</h5>
             <p class="card-text">${user.username}</p>
@@ -28,7 +28,7 @@ const createCards = (users) => {
             <p class="card-text">${user.phone}</p>
             <p class="card-text">${user.address}</p>
             <p class="card-text">${user.company}</p>
-            <a href="https://${user.website}" class="btn btn-primary">Website</a>
+            <a href="posts.html?userId=${user.id}" class="btn btn-primary">View posts</a>
           </div>
          </div>
         </div>
